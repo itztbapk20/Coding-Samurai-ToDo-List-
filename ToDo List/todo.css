@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(bg.webp) no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+.container{
+    width: 450px;
+    height: 450px;
+    padding: 40px;
+    background: transparent;
+    border: 3px solid rgb(100, 91, 112);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    overflow: auto;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 41px;
+}
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#task{
+    flex: 1;
+    outline: none;
+    padding: 10px 10px 10px 20px;
+    background-color: transparent;
+    border: 2px solid rgb(110, 96, 124);
+    border-radius: 40px;
+    color: white;
+    font-size: 18px;
+    margin-right: 18px;
+    margin-bottom: 15px;
+}
+#task::placeholder{
+    color: rgb(206, 203, 203);
+}
+.add-button{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 33px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+#todos li{
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(47, 39, 61);
+    margin: 10px 0;
+    padding: 10px 12px;
+    list-style: none;
+    border: 2px solid rgb(110, 96, 124);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
